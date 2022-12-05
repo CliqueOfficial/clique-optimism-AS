@@ -1,14 +1,16 @@
-import { Address } from "cluster";
-import { Bytes, BytesLike } from "ethers";
+import { BytesLike } from "ethers";
 import { getContractAttestationRegistry } from "./helpers";
 
 // Read the value of an Attestation
-async function readValue(
-  creator: Address,
-  receiver: Address,
-  key: Bytes
+export async function readValue(
+  contractAddress: string,
+  creator: string,
+  receiver: string,
+  key: BytesLike
 ): Promise<BytesLike> {
-  const AttestationStation = await getContractAttestationRegistry();
+  const AttestationStation = await getContractAttestationRegistry(
+    contractAddress
+  );
   const value = await AttestationStation.attestations(creator, receiver, key);
   return value;
 }

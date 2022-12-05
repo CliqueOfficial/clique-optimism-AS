@@ -1,9 +1,11 @@
 import { Contract } from "ethers";
 import { ethers } from "hardhat";
 
-export async function getContractAttestationRegistry(): Promise<Contract> {
+export async function getContractAttestationRegistry(
+  contractAdress: string
+): Promise<Contract> {
   const AttestationStation = new ethers.Contract(
-    "0x3Ca8c0B5608AE3E4D3b4d29b2699C5fCc0e67f3d",
+    contractAdress,
     ABI,
     ethers.provider
   );
