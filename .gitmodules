@@ -1,0 +1,3 @@
+[submodule "clique-sdk"]
+	path = clique-sdk
+	url = https://github.com/CliqueOfficial/clique-sdk
