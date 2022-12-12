@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/oliver/.nvm/versions/node/v16.15.1/bin/node /Users/oliver/.nvm/versions/node/v16.15.1/bin/yarn add --dev @cliqueofficial/clique-sdk
+  /Users/oliver/.nvm/versions/node/v16.15.1/bin/node /Users/oliver/.nvm/versions/node/v16.15.1/bin/yarn add @cliqueofficial/clique-sdk
 
 PATH: 
   /Users/oliver/.nvm/versions/node/v16.15.1/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/oliver/miniconda3/condabin:/Users/oliver/.nvm/versions/node/v16.15.1/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/oliver/.cargo/bin:/Users/oliver/.foundry/bin:/Users/oliver/.foundry/bin
@@ -14,15 +14,17 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: Failed to replace env in config: ${{github.authToken}
-      at /Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:94933:13
-      at String.replace (<anonymous>)
-      at envReplace (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:94928:16)
-      at Function.normalizeConfig (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:31938:69)
-      at NpmRegistry.<anonymous> (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:31968:34)
-      at Generator.next (<anonymous>)
-      at step (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: https://npm.pkg.github.com/@cliqueofficial%2fclique-sdk: Permission permission_denied: The token provided does not match expected scopes.
+      at Request.params.callback [as _callback] (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/Users/oliver/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
