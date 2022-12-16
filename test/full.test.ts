@@ -41,7 +41,8 @@ describe("Test AttestationStation scripts", function () {
     addr3 = Addr3;
 
     let key = ethers.utils.formatBytes32String("key");
-    let value = ethers.utils.formatBytes32String("value");
+
+    let value = ethers.utils.toUtf8Bytes("value");
     attestation = { about: addr1.address, key: key, val: value };
     attestations = [
       { about: addr1.address, key: key, val: value },
@@ -60,7 +61,7 @@ describe("Test AttestationStation scripts", function () {
         addr1.address,
         ethers.utils.formatBytes32String("key")
       );
-      expect(value).to.equal(ethers.utils.formatBytes32String("value"));
+      expect(ethers.utils.toUtf8String(value)).to.equal("value");
     });
     it("Test recordAttestation", async function () {
       const receipt = await recordAttestation(

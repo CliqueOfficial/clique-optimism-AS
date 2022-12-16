@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@cliqueofficial/clique-sdk@^1.0.0":
-  version "1.0.0"
-  resolved "https://npm.pkg.github.com/download/@cliqueofficial/clique-sdk/1.0.0/3a2a7cc8fedd33a4219120903e39055dff153c55#3a2a7cc8fedd33a4219120903e39055dff153c55"
-  integrity sha512-oyKObH3V1snVu788H8V5RLkrA/8W7CsVjs0u8qn5SijYRc2Z2f3iNvSoeqE8PCDScW50lqU+fVgmSVVTktTKFQ==
+"@cliqueofficial/clique-sdk@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@cliqueofficial/clique-sdk/1.0.2/b3fe226cd121b86fd7714d8e346a1b41c403b738#b3fe226cd121b86fd7714d8e346a1b41c403b738"
+  integrity sha512-/PseijUPWtIhq+vHTc6I7dMarBI/7AS5RCvrjtH9SFH7sZ2yAL3RzYTaJvmo95IDVKlZzjlGW5MBINhzy/iyYA==
   dependencies:
     axios "^1.1.3"
 
