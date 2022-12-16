@@ -1,14 +1,15 @@
-import { AttestationStation } from "../typechain-types/AttestationStation";
 import { CliqueClient, Environment } from "@cliqueofficial/clique-sdk";
 import { ethers } from "hardhat";
-import { UserData } from "./types";
+import { AttestationData, UserData } from "./types";
 
 const apiKey = String(process.env.CLIQUE_API_KEY) || "";
 const apiSecret = String(process.env.CLIQUE_API_SECRET) || "";
 
-export async function createAttestations(users: UserData[]) {
+export async function createAttestations(
+  users: UserData[]
+): Promise<AttestationData[]> {
   // Instantiate an array of AttestationDataStructs
-  let Attestations: AttestationStation.AttestationDataStruct[] = [];
+  let Attestations: AttestationData[] = [];
   // Instantiate array of Keys
   let keys: string[] = [];
 
